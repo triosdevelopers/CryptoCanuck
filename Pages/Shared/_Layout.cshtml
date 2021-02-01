@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CryptoCanuck</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/graph.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a href="/Index" title="logo">
+                    <img id="logo" src="assets/images/logo.png" title="Logo" alt="Logo">
+                </a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">CryptoCanuck</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropDown">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/History">History</a>
+                                <div class="dropDown-content">
+                                    <a href="/History#historySection1" title="section1">section 1</a>
+                                    <a href="/History#historySection2" title="section1">section 2</a>
+                                    <a href="/History#historySection3" title="section1">section 3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropDown">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Learn">Learn</a>
+                                <div class="dropDown-content">
+                                    <a href="/Learn#section1" title="section1">section 1</a>
+                                    <a href="/Learn#section2" title="section1">section 2</a>
+                                    <a href="/Learn#section3" title="section1">section 3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropDown">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Links">Links</a>
+                                <div class="dropDown-content">
+                                    <a href="/Links#section1" title="section1">section 1</a>
+                                    <a href="/Links#section2" title="section1">section 2</a>
+                                    <a href="/Links#section3" title="section1">section 3</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Bio">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="mainContainer">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+<footer class="border-top">
+    <div class="footerContainer">
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/Index">Home</a>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/About">About</a><br>
+            <a class="footer-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/History">History</a><br>
+            <a class="footer-link text-dark" href="/History#historySection1" title="section1">section 1</a><br>
+            <a class="footer-link text-dark" href="/History#historySection2" title="section1">section 2</a><br>
+            <a class="footer-link text-dark" href="/History#historySection3" title="section1">section 3</a><br>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/Learn">Learn</a><br>
+            <a class="footer-link text-dark" href="/Learn#learnSection1" title="section1">section 1</a><br>
+            <a class="footer-link text-dark" href="/Learn#learnSection2" title="section1">section 2</a><br>
+            <a class="footer-link text-dark" href="/Learn#learnSection3" title="section1">section 3</a><br>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/Links">Links</a><br>
+            <a class="footer-link text-dark" href="/Links#linksSection1" title="section1">section 1</a><br>
+            <a class="footer-link text-dark" href="/Links#linksSection2" title="section1">section 2</a><br>
+            <a class="footer-link text-dark" href="/Links#linksSection3" title="section1">section 3</a><br>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/Bio">Bio</a>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/JoinUs">Join</a><br>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img class="socialIcon" src="assets/images/facebook.png" alt="facebook"><br>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img class="socialIcon" src="assets/images/linkedin.png" alt="linkedin"><br>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class="socialIcon" src="assets/images/instagram.png" alt="instagram"><br>
+            </a>
+        </div>
+        <div class="footerDiv">
+            <a class="footer-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
+            
+        </div>
+        <div class="copyDiv">
+           <br><br><br><br><br><br><br><br><br><br> &copy; 2021 CyrptoCanuck
+        </div>
+    </div>
+</footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/code/highstock.js"></script>
+    <script src="~/js/code/modules/data.js"></script>
+    <script src="~/js/code/modules/exporting.js"></script>
+    <script src="~/js/graph.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

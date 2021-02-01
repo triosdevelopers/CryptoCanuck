@@ -1,0 +1,62 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div id= "graphCoinTable">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Coin</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total Vol/24H</th>
+                <th scope="col">Market Cap.</th>
+                <th scope="col">% in 24h </th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(int i = 0; i < @Model.top24Data.Count; i++)
+            {
+                <tr>
+                    <th scope="row">@(i+1)</th>
+                    <td> 
+                        <a class="graphLink" href="/CoinGraph?coin=@Model.top24CoinInfo[i].Name">
+                            <img src="https://www.cryptocompare.com/@Model.top24CoinInfo[i].ImageUrl?width=25"> @Model.top24CoinInfo[i].FullName
+                        </a>
+                    </td>                            
+                
+                    <td>
+                        <a class="graphLink" href="/CoinGraph?coin=@Model.top24CoinInfo[i].Name">
+                            @Model.top24Data[i].PRICE
+                        </a>
+                    </td>
+                
+                    <td>
+                        <a class="graphLink" href="/CoinGraph?coin=@Model.top24CoinInfo[i].Name">
+                            @Model.top24Data[i].TOTALVOLUME24HTO
+                        </a>
+                    </td>
+
+                    <td>
+                        <a class="graphLink" href="/CoinGraph?coin=@Model.top24CoinInfo[i].Name">
+                            @Model.top24Data[i].MKTCAP
+                        </a>
+                    </td>
+                            
+                    <td>
+                        <a class="graphLink" href="/CoinGraph?coin=@Model.top24CoinInfo[i].Name">
+                            @Model.top24Data[i].CHANGEPCT24HOUR
+                        </a>
+                    </td>                  
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

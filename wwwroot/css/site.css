@@ -1,0 +1,289 @@
+﻿
+#logo {
+  width: 50px;
+
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+  .loginLink {
+    font-size:0.8em;
+  }
+  /* dropDown section*/
+  .dropDown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 1px 8px 16px 1px #1c50fdf6;
+    z-index: 1;
+  }
+  
+  .dropDown-content a {
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropDown-content a:hover {
+    background-color: #8db2f7;
+  }
+  
+  .dropDown:hover .dropDown-content {
+    display: block;
+  }
+  
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+/* main section*/
+.mainContainer{
+  width: 100%;
+  height: 100vh;
+}
+/* about */
+.ptest {
+  margin: 50px;
+  padding: 50px;
+  text-align:left;
+  background: linear-gradient(to left, #fff, #8e9eab);
+
+}
+/* History */
+.historyContainer {
+  width: calc(100%-100);
+  overflow-y: scroll;
+  height: 100vh;
+  padding:50px;
+  background: linear-gradient(to left, #fff, #8e9eab);
+}
+  #historySection1 {
+    height: 300px;
+  }
+  .historyDetails >p {
+    width: 50%;
+    height: 280px;
+    float: left;
+    text-align: left;
+    margin-top: -5px;
+    }
+  .historyImage {
+    width:43%;
+    height: 280px;
+    float: left;
+    padding-top: 25px;
+    padding-left: 7%;
+    align-content: center;
+  }
+  .historyDetails >div {
+    float:left;
+  }
+  #historySection2 {
+    height:300px;
+    float: left;
+  }
+  .historyChart {
+    width:100%;
+    height:300px;
+    padding-top: 5px;
+    padding-left: 10%;
+    padding-bottom: 10px;
+  }
+  #historySection3 {
+    height:300px;
+    float: left;
+  }
+  #historySection3 >p {
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+  #historySection3 >h1 {
+    font-size: 2.0em;
+    margin-top: -50px;
+  }
+/* learn */
+.learnContainer {
+  width: 100%;
+  }
+  .learnSection {
+    width: calc(100%-50px);
+    padding: 25px;
+    height: 300px;
+  }
+/* Links */
+.linksContainer {
+  width: 100%;
+}
+  .linksSection {
+    width: calc(100%-50px);
+    padding: 25px;
+    height: 300px;
+  }
+/*Bio page*/
+.bioContainer {
+  width: calc(100%-20px);
+  height: 100vh;
+  float: left;
+  text-align: center;
+  padding:10px;
+  margin-left: 25%;
+}
+  .bioTeamDiv{
+    width: 50%;
+
+  }
+/* contact page*/
+.contactDiv {
+  width: calc(100%-20px);
+  text-align: center;
+  padding:10px;
+}
+  .contactMap {
+    width: 100%;
+    text-align: center;
+  }
+    #map{
+      width: 50%;
+      height: 25vh;
+      border: #fff;
+      border: 3px;
+      border-radius: 25px;
+    }
+  .contactForm {
+    padding: 30px;
+    text-align: center;
+    display: block;
+  }
+
+  .contactStyle {
+    width: 50%;
+    margin-top: 5px;
+    border-radius: 3px;
+    border-style: solid;
+    cursor: pointer;
+  }
+
+  .contactStyle:hover {
+    background: #ccc;
+  }
+
+  .textContactStyle {
+    width: 50%;
+    height: 20vh;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-style: solid;
+  }
+
+  .textContactStyle:hover {
+    background: #ccc;
+}
+  
+
+/*footer section*/
+.footer {
+  width: 100%;
+  position:absolute;
+  bottom: 0;
+  white-space: nowrap;
+  line-height: 200px;
+}
+  .footerContainer {
+    width: 100%;
+    text-align: left;
+  }
+  .footerDiv {
+    width: 5%;
+    height: 150px;
+    float: left;
+    text-align: left;
+    margin-left: 5%;
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+  .footerSocialBox{
+    widows: 10%;
+    height: 150px;
+  }
+  .socialIcon {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .copyDiv {
+    font-size: 0.6em;
+  }
+  /*privacyPolicy*/
+  .privacyPolicyDiv {
+    width: 80%;
+    padding: 25px;
+    height: 700px;
+    overflow-y: scroll;
+    border: 2px solid;
+    border-radius: 2px;
+    margin-left: 10%;
+  }

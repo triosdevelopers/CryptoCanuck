@@ -1,0 +1,29 @@
+#graphContainer{
+    height: 700px; 
+    width: 70%;
+    min-width: 310px; 
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+#graphCoinTable{
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.graphLink:hover {
+    text-decoration: none;
+}
+
+.graphLink:link{
+	color:black;
+}
+
+.graphLink:visited{
+	color: black;
+}

@@ -1,0 +1,29 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact page";
+}
+
+<div class="contactDiv">
+    <div>
+        <p class="text-center">
+            Thank you for visiting CryptoCanuck! <br>
+            We value our customers more than anything, and your satisfaction is what we aim for! <br> 
+            please feel free to contact us   , replay will be send to you within 48 hours if your message matching with our services 
+        </p>
+    </div>
+        <div class="contactMap">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46680.77341207033!2d-81.19135113167998!3d43.008844242763224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eed6e240c52b3%3A0x5ef85d3eeea9686!2striOS%20College%20Business%20Technology%20Healthcare%20-%20London%20Campus!5e0!3m2!1sen!2sca!4v1611591183839!5m2!1sen!2sca" 
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+    </div>
+    <div class="contactForm">
+        <form action="FormToEmail.php" method="post">
+            <td><input class="contactStyle" placeholder="your name" type="text" size="30" name="name"></td><br>
+            <td><input class="contactStyle" placeholder="your email" type="text" size="30" name="email"></td><br>
+            <td><textarea class="textContactStyle" name="comments" placeholder="your message" rows="10" cols="30"></textarea></td><br>
+            <td><input class="contactStyle" type="submit" value="Send" title="Send"></td>
+        </form>
+    </div>
+
+</div>

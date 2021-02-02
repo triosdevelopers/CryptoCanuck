@@ -44,8 +44,10 @@ namespace CryptoCanuck.Pages
             await Fetch.GetTop24HCryptoData();
             foreach (Top24Datum top24 in Program.topData.Data)
             {
-                top24Data.Add(top24.display.USD);
-                top24CoinInfo.Add(top24.CoinInfo);
+                if (top24.display != null){
+                    top24Data.Add(top24.display.USD);
+                    top24CoinInfo.Add(top24.CoinInfo);
+                }               
             }
             
         }

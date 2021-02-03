@@ -278,3 +278,11 @@ C:\Users\Hassan Abu Hadeer\Desktop\CryptoCanuck\obj\Debug\net5.0\ref\CryptoCanuc
 C:\Users\Hassan Abu Hadeer\Desktop\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.pdb
 C:\Users\Hassan Abu Hadeer\Desktop\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.genruntimeconfig.cache
 C:\Users\Hassan Abu Hadeer\Desktop\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.csproj.CopyComplete
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.csprojAssemblyReference.cache
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.AssemblyInfoInputs.cache
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.AssemblyInfo.cs
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.csproj.CoreCompileInputs.cache
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.MvcApplicationPartsAssemblyInfo.cache
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.RazorAssemblyInfo.cache
+E:\C#\TeamAPI\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.RazorAssemblyInfo.cs

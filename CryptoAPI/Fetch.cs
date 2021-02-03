@@ -9,6 +9,8 @@ namespace CryptoCanuck.CryptoAPI
     {
         public static HttpClient client = new HttpClient();
         public static string api_key_rui = "d2b3e6d1c2375491a5fdc1edb5d12d98f1d2e0d2b54a5ef2d90c673a9738ee6c";
+        public static string api_key_josh = "9dc82a92617f6ed122f7e8e6a8ce46f68bedbaedaf5cf9c7b774af3e1d869082";
+
 
         public static string dataLocal { get; set; }
   
@@ -51,6 +53,25 @@ namespace CryptoCanuck.CryptoAPI
             }
 
         }
+
+        public static async Task GetMarketInfo(string cryptoCur) {
+            ClearYourHead();
+
+            HttpResponseMessage bitPrices =
+                await client.GetAsync("https://min-api.cryptocompare.com/data/generateAvg?fsym=" + cryptoCur + "&tsym=CAD&e=Kraken&api_key=" + api_key_josh);
+
+            if (bitPrices.IsSuccessStatusCode)
+            {
+                dataLocal = await bitPrices.Content.ReadAsStringAsync();
+                Program.marketInfo = JsonConvert.DeserializeObject<MarketInfo>(dataLocal);
+            }
+            else
+            {
+                dataLocal = null;
+            }
+        }
+
+        
         private static void ClearYourHead()
         {
             client.DefaultRequestHeaders.Accept.Clear();

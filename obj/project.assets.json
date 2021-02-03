@@ -52,26 +52,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\teng-laptop\\.nuget\\packages\\": {}
+    "C:\\Users\\josh_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj",
+      "projectUniqueName": "E:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck.csproj",
       "projectName": "CryptoCanuck",
-      "projectPath": "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj",
-      "packagesPath": "C:\\Users\\teng-laptop\\.nuget\\packages\\",
-      "outputPath": "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\obj\\",
+      "projectPath": "E:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck.csproj",
+      "packagesPath": "C:\\Users\\josh_\\.nuget\\packages\\",
+      "outputPath": "E:\\C#\\TeamAPI\\CryptoCanuck\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\teng-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\josh_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -113,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

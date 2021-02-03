@@ -86,10 +86,55 @@ namespace CryptoCanuck.Models
 
     public class RAW    {
         public USD USD { get; set; } 
+        public string MARKET { get; set; } 
+        public string FROMSYMBOL { get; set; } 
+        public string TOSYMBOL { get; set; } 
+        public int FLAGS { get; set; } 
+        public double PRICE { get; set; } 
+        public int LASTUPDATE { get; set; } 
+        public double LASTVOLUME { get; set; } 
+        public double LASTVOLUMETO { get; set; } 
+        public string LASTTRADEID { get; set; } 
+        public double VOLUME24HOUR { get; set; } 
+        public double VOLUME24HOURTO { get; set; } 
+        public double OPEN24HOUR { get; set; } 
+        public double HIGH24HOUR { get; set; } 
+        public double LOW24HOUR { get; set; } 
+        public string LASTMARKET { get; set; } 
+        public double TOPTIERVOLUME24HOUR { get; set; } 
+        public double TOPTIERVOLUME24HOURTO { get; set; } 
+        public double CHANGE24HOUR { get; set; } 
+        public double CHANGEPCT24HOUR { get; set; } 
+        public int CHANGEDAY { get; set; } 
+        public int CHANGEPCTDAY { get; set; } 
+        public int CHANGEHOUR { get; set; } 
+        public int CHANGEPCTHOUR { get; set; } 
     }
 
     public class Display    {
-        public USD USD { get; set; } 
+        public USD USD { get; set; }
+        public string FROMSYMBOL { get; set; } 
+        public string TOSYMBOL { get; set; } 
+        public string MARKET { get; set; } 
+        public string PRICE { get; set; } 
+        public string LASTUPDATE { get; set; } 
+        public string LASTVOLUME { get; set; } 
+        public string LASTVOLUMETO { get; set; } 
+        public string LASTTRADEID { get; set; } 
+        public string VOLUME24HOUR { get; set; } 
+        public string VOLUME24HOURTO { get; set; } 
+        public string OPEN24HOUR { get; set; } 
+        public string HIGH24HOUR { get; set; } 
+        public string LOW24HOUR { get; set; } 
+        public string LASTMARKET { get; set; } 
+        public string TOPTIERVOLUME24HOUR { get; set; } 
+        public string TOPTIERVOLUME24HOURTO { get; set; } 
+        public string CHANGE24HOUR { get; set; } 
+        public string CHANGEPCT24HOUR { get; set; } 
+        public string CHANGEDAY { get; set; } 
+        public string CHANGEPCTDAY { get; set; } 
+        public string CHANGEHOUR { get; set; } 
+        public string CHANGEPCTHOUR { get; set; }  
     }
 
     public class Top24Datum    {

@@ -1,9 +1,5 @@
-#graphContainer{
-    height: 700px; 
-    width: 70%;
-    min-width: 310px; 
-    margin: 0 auto;
-    margin-top: 80px;
+.welcome{
+    margin-top: 50px;
 }
 
 #graphCoinTable{
@@ -12,6 +8,7 @@
     padding-left: 15px;
     margin: 0 auto;
     height: 700px;
+    margin-top: 80px;
     overflow-y: auto;
     overflow-x: hidden;
 }

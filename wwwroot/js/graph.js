@@ -6,6 +6,8 @@ debugger;
 var apiString = javaScriptAPI;
 var graphTitle = coinName + ' Historical Price'
 var seriesName = coinName + ' Price'
+var weekly = BTCweekly
+
 Highcharts.getJSON(apiString, function (data) {
     var data = data.Data.Data;
     //console.log(data);
@@ -31,6 +33,48 @@ Highcharts.getJSON(apiString, function (data) {
             data[i].volumeto // the volume
         ]);
     }
+
+    var timeGroup;
+    if (weekly == "weekly")
+    {
+        timeGroup = [{
+            type: 'year',
+            count: 1,
+            text: 'Week',
+            dataGrouping: {
+                forced: true,
+                units: [['week', [1]]]
+            }
+        }]
+    }
+    else
+    {
+        timeGroup = [{
+            type: 'month',
+            count: 3,
+            text: 'Day',
+            dataGrouping: {
+                forced: true,
+                units: [['day', [1]]]
+            }
+        }, {
+            type: 'year',
+            count: 1,
+            text: 'Week',
+            dataGrouping: {
+                forced: true,
+                units: [['week', [1]]]
+            }
+        }, {
+            type: 'all',
+            text: 'Month',
+            dataGrouping: {
+                forced: true,
+                units: [['month', [1]]]
+            }
+        }]
+    }
+
 
     var groupingUnits = [
         [
@@ -59,7 +103,7 @@ Highcharts.getJSON(apiString, function (data) {
         },
         rangeSelector: {
             allButtonsEnabled: true,
-            buttons: [{
+            buttons: timeGroup, /*[{
                 type: 'month',
                 count: 3,
                 text: 'Day',
@@ -82,7 +126,7 @@ Highcharts.getJSON(apiString, function (data) {
                     forced: true,
                     units: [['month', [1]]]
                 }
-            }],
+            }], */
             buttonTheme: {
                 width: 60
             },

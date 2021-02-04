@@ -95,6 +95,11 @@ Highcharts.getJSON(apiString, function (data) {
     // create the chart
     Highcharts.stockChart('graphContainer', {
 
+        chart: {
+            renderTo: 'graphContainer',
+            backgroundColor: 'rgba(255,255,255,0.5)'
+        },
+
         plotOptions: {
             candlestick: {
                 color: '#F68285',

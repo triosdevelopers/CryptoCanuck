@@ -25,6 +25,7 @@ namespace CryptoCanuck.Pages
             if (coin == "BTCWeekly"){
                 weeklyOnly = "weekly";
                 coin = "BTC";
+                coinName = "BTC";
             }                
             else 
                 coinName = coin;       

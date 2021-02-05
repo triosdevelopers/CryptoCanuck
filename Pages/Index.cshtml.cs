@@ -18,6 +18,8 @@ namespace CryptoCanuck.Pages
         public Prices prices = new Prices();
 
         public Prices totals = new Prices();
+        public string symbol;
+        public int amount;
         
         private readonly ILogger<IndexModel> _logger;
 
@@ -43,6 +45,9 @@ namespace CryptoCanuck.Pages
         {
             await Fetch.GetPrices(symbol);
             prices = Program.prices;
+
+            this.symbol = symbol;
+            this.amount = amount;
 
             prices.CalcTotal(amount);
 

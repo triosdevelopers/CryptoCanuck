@@ -54,16 +54,16 @@ namespace CryptoCanuck.CryptoAPI
 
         }
 
-        public static async Task GetMarketInfo(string cryptoCur) {
+        public static async Task GetPrices(string symbol) {
             ClearYourHead();
 
             HttpResponseMessage bitPrices =
-                await client.GetAsync("https://min-api.cryptocompare.com/data/generateAvg?fsym=" + cryptoCur + "&tsym=CAD&e=Kraken&api_key=" + api_key_josh);
+                await client.GetAsync("https://min-api.cryptocompare.com/data/price?fsym=" + symbol + "&tsyms=USD,JPY,CAD,EUR&api_key=" + api_key_josh);
 
             if (bitPrices.IsSuccessStatusCode)
             {
                 dataLocal = await bitPrices.Content.ReadAsStringAsync();
-                Program.marketInfo = JsonConvert.DeserializeObject<MarketInfo>(dataLocal);
+                Program.prices = JsonConvert.DeserializeObject<Prices>(dataLocal);
             }
             else
             {

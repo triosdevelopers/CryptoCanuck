@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pr/b+pbV/JgXnXINNAmSc2H8VAhAsogNrwMvhnjeIkg6BdH3jqqO1qsxFmiKZzdYNLYP5V8GSJr4cV7u4k7f1Q==",
+  "dgSpecHash": "Fu87Hg1edkLBy60hTsFHxJxIiIUplGfRNqZLpfzULaSRu7dUyiby3Oxn2MWNAbt4d9fyXGMvOPeJSDVy61HPHw==",
   "success": true,
-  "projectFilePath": "E:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck.csproj",
+  "projectFilePath": "E:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\CryptoCanuck.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josh_\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

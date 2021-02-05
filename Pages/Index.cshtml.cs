@@ -16,6 +16,9 @@ namespace CryptoCanuck.Pages
         public List<PriceDatum> price = new List<PriceDatum>();
         public List<USD> top24Data = new List<USD>();
         public List<CoinInfo> top24CoinInfo = new List<CoinInfo>();
+        public Prices prices = new Prices();
+
+        public Prices totals = new Prices();
         
         //Timer timer;
         private readonly ILogger<IndexModel> _logger;
@@ -51,6 +54,27 @@ namespace CryptoCanuck.Pages
             }
             
         }
+
+        public async Task OnPostPrices(string symbol, int amount)
+        {
+            await Fetch.GetPrices(symbol);
+            prices = Program.prices;
+
+            prices.CalcTotal(amount);
+
+            await Fetch.GetTop24HCryptoData();
+            foreach (Top24Datum top24 in Program.topData.Data)
+            {
+                if (top24.display != null){
+                    top24Data.Add(top24.display.USD);
+                    top24CoinInfo.Add(top24.CoinInfo);
+                }               
+            }
+        }
+
+        /*<input type=number name=crypto> X 
+        <input type=number name=CAD id="Calc_CAD" readonly value="0"> =
+        <output name=output for="val1 val2" form=foo>0</output>*/
 
         /*
         private async void OnTimedEvent(Object source, ElapsedEventArgs e)

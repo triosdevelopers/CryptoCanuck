@@ -1,0 +1,13 @@
+#converter{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#converterTable{
+    width: 80%;
+    margin: 0 auto;
+}
+#converterForm{
+    margin: 0 auto;
+    text-align: center;
+}

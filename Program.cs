@@ -14,7 +14,7 @@ namespace CryptoCanuck
     {
         public static Crypto price;
         public static Top24Root topData;
-        public static MarketInfo marketInfo;
+        public static Prices prices;
         
         public static string dataScript;
         public static void Main(string[] args)

@@ -10,6 +10,45 @@
 
 <a href="/CoinGraph?coin=BTCWeekly"> Test Code for Allaura</a>
 
+<div id="converter">
+    <div id="converterForm">
+        <form method="POST" asp-page-handler="Prices">
+        <label for="crypto">Currency converter:</label>
+
+        <select name="symbol">
+            @for(int i = 0; i < Model.top24Data.Count; i++){
+                <option name="@Model.top24CoinInfo[i].Name" value="@Model.top24CoinInfo[i].Name">@Model.top24CoinInfo[i].FullName</option>
+            }
+        </select>
+        <input type="number" name="amount">
+        <button class="btn btn-default">Enter</button>
+        </form>
+    </div>
+    
+    <div id="converterTable">
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Currency</th>
+                <th>CAD</th>
+                <th>USD</th>
+                <th>JPY</th>
+                <th>EUR</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>@Model.amount @Model.symbol</td>
+            <td>$@Model.prices.CAD</td>
+            <td>$@Model.prices.USD</td>
+            <td>¥@Model.prices.JPY</td>
+            <td>€@Model.prices.EUR</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>  
+</div>
+
 <div id= "graphCoinTable">
     <table class="table table-hover">
         <thead>
@@ -60,43 +99,4 @@
             }
         </tbody>
     </table>
-</div>
-
-<div id="converter">
-    <div id="converterForm">
-        <form method="POST" asp-page-handler="Prices">
-        <label for="crypto">Currency converter:</label>
-
-        <select name="symbol">
-            @for(int i = 0; i < Model.top24Data.Count; i++){
-                <option name="@Model.top24CoinInfo[i].Name" value="@Model.top24CoinInfo[i].Name">@Model.top24CoinInfo[i].FullName</option>
-            }
-        </select>
-        <input type="number" name="amount">
-        <button class="btn btn-default">Enter</button>
-        </form>
-    </div>
-    
-    <div id="converterTable">
-        <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>Currency</th>
-                <th>CAD</th>
-                <th>USD</th>
-                <th>JPY</th>
-                <th>EUR</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>@Model.amount @Model.symbol</td>
-            <td>$@Model.prices.CAD</td>
-            <td>$@Model.prices.USD</td>
-            <td>¥@Model.prices.JPY</td>
-            <td>€@Model.prices.EUR</td>
-        </tr>
-        </tbody>
-    </table>
-    </div>  
 </div>

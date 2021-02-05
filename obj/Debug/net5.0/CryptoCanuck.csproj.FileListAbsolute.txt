@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Hassan Abu Hadeer\Documents\Trios\WinMobileDev\file\CyrptoCanuck\day3\CryptoCanuck\CryptoCanuck\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Hassan Abu Hadeer\Documents\Trios\WinMobileDev\file\CyrptoCanuck\day3\CryptoCanuck\CryptoCanuck\bin\Debug\net5.0\appsettings.json
 C:\Users\Hassan Abu Hadeer\Documents\Trios\WinMobileDev\file\CyrptoCanuck\day3\CryptoCanuck\CryptoCanuck\bin\Debug\net5.0\CryptoCanuck.exe
@@ -334,3 +335,5 @@ E:\C#\TeamAPI\CryptoCanuck\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.dll
 E:\C#\TeamAPI\CryptoCanuck\CryptoCanuck\obj\Debug\net5.0\ref\CryptoCanuck.dll
 E:\C#\TeamAPI\CryptoCanuck\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.pdb
 E:\C#\TeamAPI\CryptoCanuck\CryptoCanuck\obj\Debug\net5.0\CryptoCanuck.genruntimeconfig.cache
+=======
+>>>>>>> 6e726337e2187ecd6259cd62d9c0c1fc67f46413

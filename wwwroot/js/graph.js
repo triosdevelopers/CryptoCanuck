@@ -3,11 +3,11 @@
 
 // Write your JavaScript code.
 debugger;
-var apiString = variable;
+var apiString = javaScriptAPI;
 var graphTitle = coinName + ' Historical Price'
 var seriesName = coinName + ' Price'
-console.log(variable);
-//var apiString = "https://min-api.cryptocompare.com/data/v2/histoday?fsym=BTC&tsym=USD&limit=2000&api_key=d2b3e6d1c2375491a5fdc1edb5d12d98f1d2e0d2b54a5ef2d90c673a9738ee6c"
+var weekly = BTCweekly
+
 Highcharts.getJSON(apiString, function (data) {
     var data = data.Data.Data;
     //console.log(data);
@@ -34,6 +34,48 @@ Highcharts.getJSON(apiString, function (data) {
         ]);
     }
 
+    var timeGroup;
+    if (weekly == "weekly")
+    {
+        timeGroup = [{
+            type: 'year',
+            count: 1,
+            text: 'Week',
+            dataGrouping: {
+                forced: true,
+                units: [['week', [1]]]
+            }
+        }]
+    }
+    else
+    {
+        timeGroup = [{
+            type: 'month',
+            count: 3,
+            text: 'Day',
+            dataGrouping: {
+                forced: true,
+                units: [['day', [1]]]
+            }
+        }, {
+            type: 'year',
+            count: 1,
+            text: 'Week',
+            dataGrouping: {
+                forced: true,
+                units: [['week', [1]]]
+            }
+        }, {
+            type: 'all',
+            text: 'Month',
+            dataGrouping: {
+                forced: true,
+                units: [['month', [1]]]
+            }
+        }]
+    }
+
+
     var groupingUnits = [
         [
             'day', // unit name
@@ -53,6 +95,11 @@ Highcharts.getJSON(apiString, function (data) {
     // create the chart
     Highcharts.stockChart('graphContainer', {
 
+        chart: {
+            renderTo: 'graphContainer',
+            backgroundColor: 'rgba(255,255,255,0.5)'
+        },
+
         plotOptions: {
             candlestick: {
                 color: '#F68285',
@@ -61,7 +108,7 @@ Highcharts.getJSON(apiString, function (data) {
         },
         rangeSelector: {
             allButtonsEnabled: true,
-            buttons: [{
+            buttons: timeGroup, /*[{
                 type: 'month',
                 count: 3,
                 text: 'Day',
@@ -84,7 +131,7 @@ Highcharts.getJSON(apiString, function (data) {
                     forced: true,
                     units: [['month', [1]]]
                 }
-            }],
+            }], */
             buttonTheme: {
                 width: 60
             },

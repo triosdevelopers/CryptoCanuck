@@ -1,4 +1,25 @@
 ﻿
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(230, 230, 230); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(to left, #fff, #8e9eab); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8e8f96; 
+}
+
 #logo {
   width: 50px;
 
@@ -25,9 +46,7 @@ a {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-  .loginLink {
-    font-size:0.8em;
-  }
+
   /* dropDown section*/
   .dropDown {
     position: relative;
@@ -40,7 +59,7 @@ a {
     background-color: #fff;
     min-width: 160px;
     border-radius: 10px;
-    box-shadow: 1px 8px 16px 1px #1c50fdf6;
+    box-shadow: 1px 8px 16px 1px #a0b3ecf6;
     z-index: 1;
   }
   
@@ -51,7 +70,7 @@ a {
   }
   
   .dropDown-content a:hover {
-    background-color: #8db2f7;
+    background-color: hsl(220, 28%, 72%);
   }
   
   .dropDown:hover .dropDown-content {
@@ -102,104 +121,351 @@ body {
 .mainContainer{
   width: 100%;
   height: 100vh;
+  overflow-y: scroll;
+  background-image: linear-gradient(to right,rgba(192, 188, 188, 0.7), #f1f3f5),  
+  url('../assets/historyPhotos/BitcoinImage.jpg');
+  position: relative;
+  background-size: cover;
 }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .mainContainer::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .mainContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
 /* about */
 .ptest {
   margin: 50px;
   padding: 50px;
+  overflow-y: scroll;
   text-align:left;
-  background: linear-gradient(to left, #fff, #8e9eab);
 
 }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .ptest::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .ptest {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+/* History */
 /* History */
 .historyContainer {
-  width: calc(100%-100);
+  width: 100%;
   overflow-y: scroll;
   height: 100vh;
   padding:50px;
-  background: linear-gradient(to left, #fff, #8e9eab);
+
+  } 
+/* Hide scrollbar for Chrome, Safari and Opera */
+ .historyContainer::-webkit-scrollbar {
+  display: none;
 }
+/* Hide scrollbar for IE, Edge and Firefox */
+.historyContainer {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+#bigletter {
+  color: red;
+  font-size:80px;
+  float:left;
+  padding-right: 8px;
+  line-height: 0.7;
+  } 
   #historySection1 {
     height: 300px;
   }
-  .historyDetails >p {
-    width: 50%;
-    height: 280px;
+  #youtubevideo{
+    display: inline;
+    width: 55%;
+  }
+  #historySection1 >p {
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-left: 10px;
     float: left;
+    width: 40%;
+    font-weight: 600;
+  }
+/* Youtube iframe container*/
+.iframe-container {
+  position: relative;
+  width: 43%;
+  padding-top: 25px; 
+  height: 280px;
+  margin-left: 10px;
+  align-content:center;
+  float: left;
+  border:3px soild #0366d6;
+  }
+.iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+.historyDetails >div {
+    float:left;
+  }
+  #historySection2 {
+    height:300px;  
+  }
+  #historySection2 >p {
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    float: left;
+    font-weight: 600;
+  }
+  #historySection3 {
+    height:360px; 
+  }
+  .historyChart {
+    float: left;
+    height:360px;
+    width:70%;
+    margin-left: 15%;
+  }
+  #historySection4 {
+    height:300px;  
+  }
+  .historyText >div {
+    float:left;
+    font-weight: 600;
+    text-align: justify;
+    padding-top: 20px;
+  }
+  .historyText >p {
+    width: 50%;
     text-align: left;
-    margin-top: -5px;
-    }
-  .historyImage {
-    width:43%;
-    height: 280px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .historyImg {
+    width: 43%;
+    height: 300px;
     float: left;
     padding-top: 25px;
     padding-left: 7%;
     align-content: center;
   }
-  .historyDetails >div {
+  #historySection5 {
+    height:300px;
+  }
+  .historyChartB {
+    float: left;
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 15%;
+  }
+  #historySection6 {
+    height: 300px;
     float:left;
+    margin-top: 50px;
   }
-  #historySection2 {
-    height:300px;
-    float: left;
-  }
-  .historyChart {
-    width:100%;
-    height:300px;
-    padding-top: 5px;
-    padding-left: 10%;
-    padding-bottom: 10px;
-  }
-  #historySection3 {
-    height:300px;
-    float: left;
-  }
-  #historySection3 >p {
-    text-align: left;
-    padding-bottom: 20px;
-    padding-left: 10px;
-  }
-  #historySection3 >h1 {
+  .historySec >h1 {
     font-size: 2.0em;
-    margin-top: -50px;
+    font-weight: 600;
+  }
+  .historySec >p {
+    float: left;
+    font-weight: 600;
+    padding-bottom: 50px;
+    text-align: justify;
   }
 /* learn */
+
 .learnContainer {
-  width: 100%;
+  width: calc(100%-70px);
+  padding:0 35px;
+  overflow-y: scroll;
+  display:block;
+
   }
   .learnSection {
     width: calc(100%-50px);
     padding: 25px;
-    height: 300px;
+    float: left; 
   }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .learnContainer::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .learnContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+  .learnSubject {
+    width: 100%;
+  }
+  .hardwareImgDiv {
+    width: 100%;
+    float: left;
+  }
+  .hardwareImage {
+    width: 20%;
+    margin-left:10%;
+    margin-top: 20px;
+    margin-bottom:20px;
+  }
+  .hardwareWallets {
+    width: 100%;
+    text-align: center;
+  }
+    .hardwareWalletsDiv {
+      width: 20%;
+      text-align: center;
+      display:inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+      .learnImage {
+        width: 75px;
+        height: 75px;
+      }
+  .paperImgDiv {
+    width:100%;
+    float: left;
+  }
+    .paperImage {
+      width: 20%;
+      margin-left:10%;
+      margin-top: 20px;
+      margin-bottom:20px;
+      
+    }
+  .desktopWalletImagesDiv {
+    width: 100%;
+    text-align: center;
+  }
+    .desktopWalletImages{
+      width: 20%;
+      display:inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  .mobileWalletImagesDiv {
+    width: 100%;
+    text-align: center;
+  }
+    .mobileWalletImages{
+      width: 20%;
+      text-align: center;
+      display:inline-block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
 /* Links */
 .linksContainer {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  overflow-y: scroll;
+  float: left;
+
+
 }
   .linksSection {
-    width: calc(100%-50px);
+    width: 100%;
+    float: left;
     padding: 25px;
-    height: 300px;
+    margin-top: 30px;
+  }
+
+    table {
+      width:100%;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+    }
+    .linksTable tr:nth-child(even) {
+      background:none;
+    }
+    .linksTable tr:nth-child(odd) {
+     background: #fff;
+    }
+    .linksTable th {
+      background: #000;
+      color: white;
+    }
+    .youtubeContainer {
+      width:70%;
+      text-align: center;
+      padding-top: 15 px;
+      margin-left: 15%;
+      margin-bottom: 25px;
+    }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .linksContainer::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .linksContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   }
 /*Bio page*/
 .bioContainer {
   width: calc(100%-20px);
   height: 100vh;
   float: left;
-  text-align: center;
   padding:10px;
-  margin-left: 25%;
-}
-  .bioTeamDiv{
-    width: 50%;
+  margin: 0 25%;
+  overflow-y: scroll;
 
+}
+  .bioTeamDiv {
+    width: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background:linear-gradient(to left, #fff, #8e9eab);
   }
+    .bioImageDiv {
+      width:100px;
+      margin:5px;
+      float: left;
+      display: block;
+    }
+    .bioImage {
+      width: 100%;
+      border-radius: 50px;
+    }
+
+    .bioDescription {
+      width: calc(80%-10px);
+      margin:5px;
+      font-size:0.9em;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .bioContainer::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .bioContainer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+
 /* contact page*/
 .contactDiv {
   width: calc(100%-20px);
   text-align: center;
   padding:10px;
+  overflow-y: scroll;
+
 }
   .contactMap {
     width: 100%;
@@ -227,7 +493,7 @@ body {
   }
 
   .contactStyle:hover {
-    background: #ccc;
+    background:linear-gradient(to left, #fff, #8e9eab);
   }
 
   .textContactStyle {
@@ -239,8 +505,17 @@ body {
   }
 
   .textContactStyle:hover {
-    background: #ccc;
-}
+    background: linear-gradient(to left, #fff, #8e9eab);
+  }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .contactDiv::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .contactDiv {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
   
 
 /*footer section*/
@@ -250,6 +525,7 @@ body {
   bottom: 0;
   white-space: nowrap;
   line-height: 200px;
+  
 }
   .footerContainer {
     width: 100%;
@@ -283,7 +559,15 @@ body {
     padding: 25px;
     height: 700px;
     overflow-y: scroll;
-    border: 2px solid;
-    border-radius: 2px;
     margin-left: 10%;
+
+    }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .privacyPolicyDiv::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .privacyPolicyDiv {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
   }

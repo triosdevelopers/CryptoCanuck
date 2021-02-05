@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using CryptoCanuck.CryptoAPI;
 using CryptoCanuck.Models;
-using System.Timers;
 
 namespace CryptoCanuck.Pages
 {
@@ -20,7 +19,6 @@ namespace CryptoCanuck.Pages
 
         public Prices totals = new Prices();
         
-        //Timer timer;
         private readonly ILogger<IndexModel> _logger;
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -29,21 +27,7 @@ namespace CryptoCanuck.Pages
         }
 
         public async Task OnGet()
-        {
-            /*
-            aTimer = new Timer();
-            aTimer.Interval = 2000;
-
-            // Hook up the Elapsed event for the timer. 
-            aTimer.Elapsed += OnTimedEvent;
-
-            // Have the timer fire repeated events (true is the default)
-            aTimer.AutoReset = true;
-
-            // Start the timer
-            aTimer.Enabled = true;
-            */
-            
+        {           
             await Fetch.GetTop24HCryptoData();
             foreach (Top24Datum top24 in Program.topData.Data)
             {

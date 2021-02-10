@@ -131,46 +131,27 @@ body {
   .mainContainer::-webkit-scrollbar {
     display: none;
   }
+  
   /* Hide scrollbar for IE, Edge and Firefox */
   .mainContainer {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   }
+
 /* about */
 .ptest {
   margin: 50px;
   padding: 50px;
-  overflow-y: scroll;
   text-align:left;
-
 }
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .ptest::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .ptest {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  }
-/* History */
-/* History */
+
+  /* History */
 .historyContainer {
   width: 100%;
-  overflow-y: scroll;
   height: 100vh;
   padding:50px;
-
   } 
-/* Hide scrollbar for Chrome, Safari and Opera */
- .historyContainer::-webkit-scrollbar {
-  display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-.historyContainer {
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
-}
+
 #bigletter {
   color: red;
   font-size:80px;
@@ -178,13 +159,16 @@ scrollbar-width: none;  /* Firefox */
   padding-right: 8px;
   line-height: 0.7;
   } 
+
   #historySection1 {
     height: 300px;
   }
+
   #youtubevideo{
     display: inline;
     width: 55%;
   }
+
   #historySection1 >p {
     text-align: justify;
     padding-bottom: 10px;
@@ -193,6 +177,7 @@ scrollbar-width: none;  /* Firefox */
     width: 40%;
     font-weight: 600;
   }
+
 /* Youtube iframe container*/
 .iframe-container {
   position: relative;
@@ -204,6 +189,7 @@ scrollbar-width: none;  /* Firefox */
   float: left;
   border:3px soild #0366d6;
   }
+
 .iframe-container iframe {
   position: absolute;
   top:0;
@@ -211,12 +197,15 @@ scrollbar-width: none;  /* Firefox */
   width: 100%;
   height: 100%;
   }
+
 .historyDetails >div {
     float:left;
   }
+
   #historySection2 {
     height:300px;  
   }
+
   #historySection2 >p {
     text-align: justify;
     padding-bottom: 10px;
@@ -224,24 +213,29 @@ scrollbar-width: none;  /* Firefox */
     float: left;
     font-weight: 600;
   }
+
   #historySection3 {
     height:360px; 
   }
+
   .historyChart {
     float: left;
     height:360px;
     width:70%;
     margin-left: 15%;
   }
+
   #historySection4 {
     height:300px;  
   }
+
   .historyText >div {
     float:left;
     font-weight: 600;
     text-align: justify;
     padding-top: 20px;
   }
+
   .historyText >p {
     width: 50%;
     text-align: left;
@@ -251,6 +245,7 @@ scrollbar-width: none;  /* Firefox */
     font-weight: 600;
     text-align: justify;
   }
+
   .historyImg {
     width: 43%;
     height: 300px;
@@ -259,67 +254,66 @@ scrollbar-width: none;  /* Firefox */
     padding-left: 7%;
     align-content: center;
   }
+
   #historySection5 {
     height:300px;
   }
+
   .historyChartB {
     float: left;
     width: 70%;
     margin-top: 30px;
     margin-left: 15%;
   }
+
   #historySection6 {
     height: 300px;
     float:left;
     margin-top: 50px;
   }
+
   .historySec >h1 {
     font-size: 2.0em;
     font-weight: 600;
   }
+
   .historySec >p {
     float: left;
     font-weight: 600;
     padding-bottom: 50px;
     text-align: justify;
   }
-/* learn */
 
+/* learn */
 .learnContainer {
   width: calc(100%-70px);
   padding:0 35px;
-  overflow-y: scroll;
   display:block;
-
   }
+
   .learnSection {
     width: calc(100%-50px);
     padding: 25px;
     float: left; 
   }
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .learnContainer::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .learnContainer {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  }
 
   .learnSubject {
     width: 100%;
   }
+
   .hardwareImgDiv {
     width: 100%;
     float: left;
   }
+
+
   .hardwareImage {
     width: 20%;
     margin-left:10%;
     margin-top: 20px;
     margin-bottom:20px;
   }
+
   .hardwareWallets {
     width: 100%;
     text-align: center;
@@ -331,35 +325,46 @@ scrollbar-width: none;  /* Firefox */
       margin-top: 20px;
       margin-bottom: 20px;
     }
+
+.checked {
+    color: orange;
+}
+  
+
       .learnImage {
         width: 75px;
         height: 75px;
       }
+
   .paperImgDiv {
     width:100%;
     float: left;
   }
+
     .paperImage {
       width: 20%;
       margin-left:10%;
       margin-top: 20px;
-      margin-bottom:20px;
-      
+      margin-bottom:20px; 
     }
+
   .desktopWalletImagesDiv {
     width: 100%;
     text-align: center;
   }
+
     .desktopWalletImages{
       width: 20%;
       display:inline-block;
       margin-top: 20px;
       margin-bottom: 20px;
     }
+
   .mobileWalletImagesDiv {
     width: 100%;
     text-align: center;
   }
+
     .mobileWalletImages{
       width: 20%;
       text-align: center;
@@ -372,11 +377,9 @@ scrollbar-width: none;  /* Firefox */
 .linksContainer {
   width: 80%;
   margin-left: 10%;
-  overflow-y: scroll;
   float: left;
-
-
 }
+
   .linksSection {
     width: 100%;
     float: left;
@@ -387,20 +390,25 @@ scrollbar-width: none;  /* Firefox */
     table {
       width:100%;
     }
+
     th, td {
       padding: 15px;
       text-align: left;
     }
+
     .linksTable tr:nth-child(even) {
       background:none;
     }
+
     .linksTable tr:nth-child(odd) {
      background: #fff;
     }
+
     .linksTable th {
       background: #000;
       color: white;
     }
+
     .youtubeContainer {
       width:70%;
       text-align: center;
@@ -408,15 +416,44 @@ scrollbar-width: none;  /* Firefox */
       margin-left: 15%;
       margin-bottom: 25px;
     }
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .linksContainer::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .linksContainer {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  }
+
+    /* css done by shilpa up to line 450 */
+    #linkSection6 {
+      height: 300px;
+    }
+    #youtubevideo{
+      display: inline;
+      width: 55%;
+    }
+    
+    #linkSection6 >p {
+      text-align: justify;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      float: left;
+      width: 40%;
+    }
+        
+  /* Youtube iframe container*/
+  .iframe-container {
+    position: relative;
+    width: 43%;
+    padding-top: 25px; 
+    height: 280px;
+    margin-left: 10px;
+    align-content:center;
+    float: left;
+    border:3px soild #0366d6;
+    }
+  
+    .iframe-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
 /*Bio page*/
 .bioContainer {
   width: calc(100%-20px);
@@ -424,21 +461,23 @@ scrollbar-width: none;  /* Firefox */
   float: left;
   padding:10px;
   margin: 0 25%;
-  overflow-y: scroll;
-
 }
+
   .bioTeamDiv {
     width: 100%;
     border-radius: 20px;
     background-size: cover;
     background:linear-gradient(to left, #fff, #8e9eab);
   }
+
     .bioImageDiv {
       width:100px;
+      height: 120px;
       margin:5px;
       float: left;
       display: block;
     }
+
     .bioImage {
       width: 100%;
       border-radius: 50px;
@@ -449,28 +488,22 @@ scrollbar-width: none;  /* Firefox */
       margin:5px;
       font-size:0.9em;
     }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .bioContainer::-webkit-scrollbar {
-      display: none;
-    }
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .bioContainer {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    }
+      .bioDescription > p {
+        font-weight: 400;
+      }
 
 /* contact page*/
 .contactDiv {
   width: calc(100%-20px);
   text-align: center;
   padding:10px;
-  overflow-y: scroll;
-
 }
+
   .contactMap {
     width: 100%;
     text-align: center;
   }
+
     #map{
       width: 50%;
       height: 25vh;
@@ -478,6 +511,7 @@ scrollbar-width: none;  /* Firefox */
       border: 3px;
       border-radius: 25px;
     }
+
   .contactForm {
     padding: 30px;
     text-align: center;
@@ -507,16 +541,6 @@ scrollbar-width: none;  /* Firefox */
   .textContactStyle:hover {
     background: linear-gradient(to left, #fff, #8e9eab);
   }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .contactDiv::-webkit-scrollbar {
-      display: none;
-    }
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .contactDiv {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    }
-  
 
 /*footer section*/
 .footer {
@@ -525,12 +549,13 @@ scrollbar-width: none;  /* Firefox */
   bottom: 0;
   white-space: nowrap;
   line-height: 200px;
-  
 }
+
   .footerContainer {
     width: 100%;
     text-align: left;
   }
+
   .footerDiv {
     width: 5%;
     height: 150px;
@@ -540,34 +565,27 @@ scrollbar-width: none;  /* Firefox */
     font-weight: 400;
     font-size: 0.7em;
   }
+
   .footerSocialBox{
     widows: 10%;
     height: 150px;
   }
+
   .socialIcon {
     width: 20px;
     height: 20px;
     margin-top: 10px;
     margin-left: 5px;
   }
+
   .copyDiv {
     font-size: 0.6em;
   }
+
   /*privacyPolicy*/
   .privacyPolicyDiv {
     width: 80%;
     padding: 25px;
     height: 700px;
-    overflow-y: scroll;
     margin-left: 10%;
-
-    }
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .privacyPolicyDiv::-webkit-scrollbar {
-    display: none;
-  }
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .privacyPolicyDiv {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
   }

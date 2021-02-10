@@ -1,0 +1,70 @@
+Work done by Hassan 
+
+    1.	Project file creation 
+    2.	Creating all the pages (cshtml.cs and cshtml)
+    3.	Made all the contain in the _Layout.cshtml (nav, pages, footer ) including  dropdown and 
+        footer section links
+    4.	Fix the mobile responsive for all the pages in the main css file to keep one scrollbar in the webpage,
+        it will work with Chrome, Safari, Opera, IE, Edge and Firefox
+        (page contents done by the page team)
+    5.  I changed the scroll bar color
+    6.	Included the social icon in the footer section and organize it for mobile responsive  
+    7.	Add the privacy page 
+    8.	I made the ( introduction , research , Trezor wallet , use the wallet ) in learn page 
+    9.	I made in links page ( exchange websites , wallets (some links from Nabil), ATM , Miner Pool section , 
+        in Tutorials (Bitcoin mining link ), 
+        in Tutorials section ( I add the recieved links from Nabil , Bakish , Shilpa)
+    10.	Bio page ( I received photos and description from the team members and update it in the file )
+    11.	Contact page ,to make the form active I made some research to get the PHP file and link it with the form 
+    12.	I gathered all the pages from the team and arrange it in one project       
+
+
+Work done by Shilpa
+
+    1. Logo
+    2. About page
+    3. Own bio information
+    4. link-bitcoin in a nutshell
+
+
+Work done by Bakish Panday
+
+    1. History Research from starting to 2014
+    2. CSS update for Histroy page
+    3. HTML update for History page
+    4. Link update 
+    5. Bio page update
+
+
+Work done by Razan
+1. History research from 2015- 2020
+2. Write HTML and CSS  for history page
+3. Desgin 2 clarifiation charts (using photoshop) 
+4. Add background for all pages.
+5. Update drop list in history page 
+
+
+
+
+
+Work done by Nabil
+1. Learn Research 
+2. Write  CSS  & HTML for Learn Page
+3. Update HTML in  link page ("How to send and receive bitcoins", "Bay bitcoins")
+4. Add Rating Star in learn page.
+
+
+
+Work done by Rui Teng
+1. Study cryptocompare API interface
+2. Implement index.cshtml and index.cshtml.cs with 100 crypto coins ordered by top trading volume last 24 hours
+3. Create candle stick graph for each coin displayed from index page, which implemented with javascript graph.js
+4. Create weekly only graph call interface for newsletter
+5. The obove Implementation requiered me to create CryptoAPI folder with Fetch.cs and Models folder to store C# classes 
+6. Create global call interface in program.cs
+7. Update bio to the bio menu
+8. Code integration from team shell and API
+9. Study the possibility to dispaying real time price changes every two second using timer, and
+    found it is not possible using razor page only. An interface like AJAX to make partiell page update is required.
+    However, real time update is possible with Blazor WASM using timer mechanism.
+10. Create github repository for CryptoCanuck project

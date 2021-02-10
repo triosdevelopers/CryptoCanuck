@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\CryptoCanuck.csproj",
+  "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15603,73 +15603,73 @@
   "RootNamespace": "CryptoCanuck",
   "Documents": [
     {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Learn.cshtml",
-      "TargetPath": "Pages\\Learn.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Contact.cshtml",
-      "TargetPath": "Pages\\Contact.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\About.cshtml",
-      "TargetPath": "Pages\\About.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\CoinGraph.cshtml",
-      "TargetPath": "Pages\\CoinGraph.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Privacy.cshtml",
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Links.cshtml",
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\CoinGraph.cshtml",
+      "TargetPath": "Pages\\CoinGraph.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Bio.cshtml",
+      "TargetPath": "Pages\\Bio.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Links.cshtml",
       "TargetPath": "Pages\\Links.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\History.cshtml",
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\History.cshtml",
       "TargetPath": "Pages\\History.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\C#\\TeamAPI\\CryptoCanuck\\CryptoCanuck\\Pages\\Bio.cshtml",
-      "TargetPath": "Pages\\Bio.cshtml",
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Learn.cshtml",
+      "TargetPath": "Pages\\Learn.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\Contact.cshtml",
+      "TargetPath": "Pages\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\Pages\\About.cshtml",
+      "TargetPath": "Pages\\About.cshtml",
       "FileKind": "mvc"
     }
   ],

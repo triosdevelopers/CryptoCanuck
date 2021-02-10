@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+// Top24 is the top coins with highest trading volume within last 24 hour
+
 namespace CryptoCanuck.Models
 {
     public class MetaData    {

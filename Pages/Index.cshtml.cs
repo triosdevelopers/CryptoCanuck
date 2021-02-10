@@ -13,6 +13,8 @@ namespace CryptoCanuck.Pages
     public class IndexModel : PageModel
     {
         public List<PriceDatum> price = new List<PriceDatum>();
+        
+        // Top24 is the top coins with highest trading volume within last 24 hour
         public List<USD> top24Data = new List<USD>();
         public List<CoinInfo> top24CoinInfo = new List<CoinInfo>();
         public Prices prices = new Prices();

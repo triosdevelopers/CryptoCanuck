@@ -68,3 +68,11 @@ Work done by Rui Teng
     found it is not possible using razor page only. An interface like AJAX to make partiell page update is required.
     However, real time update is possible with Blazor WASM using timer mechanism.
 10. Create github repository for CryptoCanuck project
+
+Works done by Josh Eugenio
+- api call for crypto prices
+- created prices class to properly store prices
+- created a crypto converter that uses allows the user to choose one of the top 100 crypto currencies 
+    and calculates the price into USD CAD JPY or EUR
+- created a form that takes in a crypto currency and the amount of that currency to be calculated
+- created a chart that displays the the calculated prices

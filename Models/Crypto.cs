@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 
+// classes converte from API interface
+// Create By Rui
 namespace CryptoCanuck.Models
 {
     public class PriceDatum    {

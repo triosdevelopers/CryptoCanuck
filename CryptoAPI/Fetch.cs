@@ -32,7 +32,7 @@ namespace CryptoCanuck.CryptoAPI
             {
                 dataLocal = null;
             }
-        }
+        } //GetCryptoPriceData Created by Rui 
 
         public static async Task GetTop24HCryptoData(){
              ClearYourHead();
@@ -51,7 +51,7 @@ namespace CryptoCanuck.CryptoAPI
                 dataLocal = null;
             }
 
-        }
+        } //GetTop24HCryptoData Created by Rui 
 
         public static async Task GetPrices(string symbol) {
             ClearYourHead();
@@ -68,7 +68,7 @@ namespace CryptoCanuck.CryptoAPI
             {
                 dataLocal = null;
             }
-        }
+        } //GetPrices
 
         
         private static void ClearYourHead()

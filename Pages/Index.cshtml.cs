@@ -41,7 +41,7 @@ namespace CryptoCanuck.Pages
                 }               
             }
             
-        }
+        } // OnGet() Created by Rui 
 
         public async Task OnPostPrices(string symbol, int amount)
         {
@@ -61,22 +61,6 @@ namespace CryptoCanuck.Pages
                     top24CoinInfo.Add(top24.CoinInfo);
                 }               
             }
-        }
-
-        /*<input type=number name=crypto> X 
-        <input type=number name=CAD id="Calc_CAD" readonly value="0"> =
-        <output name=output for="val1 val2" form=foo>0</output>*/
-
-        /*
-        private async void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            await Fetch.GetTop24HCryptoData();
-            foreach (Top24Datum top24 in Program.topData.Data)
-            {
-                top24Data.Add(top24.display.USD);
-                top24CoinInfo.Add(top24.CoinInfo);
-            }
-        }
-        */
+        } //OnPostPrices
     }
 }

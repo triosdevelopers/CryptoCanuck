@@ -9,7 +9,7 @@ using CryptoCanuck.Models;
 
 namespace CryptoCanuck.Pages
 {
-    public class Subscription{
+    public class SubscriptionModel : PageModel{
 
         public void OnPostSubscribe(string email){
             using (SqlConnection myConn = new SqlConnection(Program.da.cs)){

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\allie\\Documents\\GitHub\\CryptoCanuck\\CryptoCanuck.csproj": {}
+    "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj": {}
   },
   "projects": {
-    "C:\\Users\\allie\\Documents\\GitHub\\CryptoCanuck\\CryptoCanuck.csproj": {
+    "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\allie\\Documents\\GitHub\\CryptoCanuck\\CryptoCanuck.csproj",
+        "projectUniqueName": "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj",
         "projectName": "CryptoCanuck",
-        "projectPath": "C:\\Users\\allie\\Documents\\GitHub\\CryptoCanuck\\CryptoCanuck.csproj",
-        "packagesPath": "C:\\Users\\allie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\allie\\Documents\\GitHub\\CryptoCanuck\\obj\\",
+        "projectPath": "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\CryptoCanuck.csproj",
+        "packagesPath": "C:\\Users\\teng-laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Web\\windows10\\CryptoCanucklast\\CryptoCanuck\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\allie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\teng-laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

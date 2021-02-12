@@ -4,3 +4,8 @@ dotnet add package System.Data.SqlClient --version 4.8.2
 ----- if still issues use this to update the intall
 
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+dotnet add package System.Configuration.ConfigurationManager --version 5.0.0
+
+dotnet add package MailKit --version 2.10.1
+

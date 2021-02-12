@@ -5,18 +5,24 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Data.SqlClient;
+using CryptoCanuck.Models;
+using System.Net.Mail; 
+using System.Net;
+using System.Configuration;
+using System.IO;
+
 
 namespace CryptoCanuck.Pages
 {
     public class AdminModel : PageModel
     {
         public List<string> emails = new List<string>();
-
+        MailMessage mailMessage = new MailMessage();
+        SmtpClient _smtp = new SmtpClient();
         string teamsEmail;
         string teamsEmailPassword;
         string teamsEmailHost;
         int teamsEmailPort;
-
         public void OnGet() {} // OnGet()
     
         public void MessageUpdate(string message){
@@ -36,11 +42,11 @@ namespace CryptoCanuck.Pages
 
                 addMessage.ExecuteNonQuery();
                 addMessage.Parameters.Clear(); // clear it
-            } // using
-            
-        } // MessageUpdate()
+            } // using   
+        } // Message Update
 
-        public  List<string> GrabEmails(){
+
+           public  List<string> GrabEmails(){
             SqlConnection myConn = new SqlConnection(Program.da.cs);
             myConn.Open();
 
@@ -61,9 +67,6 @@ namespace CryptoCanuck.Pages
         public void SendEmail(object sender, EventArgs e){
             //get the Settings from WEB.CONFIG file.
 
-            MailMessage mailMessage = new MailMessage();
-            SmtpClient _smtp = new SmtpClient();
-
             teamsEmail = ConfigurationManager.AppSettings["emailsender"].ToString();
             teamsEmailPassword = ConfigurationManager.AppSettings["password"].ToString();
             teamsEmailHost = ConfigurationManager.AppSettings["smtpserver"].ToString();
@@ -73,7 +76,7 @@ namespace CryptoCanuck.Pages
 
 
             //Getting Email Body Text for Newsletter path will need to be updated for whoever is using at this time.
-            string FilePath = "C:\\Users\\allie\\Documents\\GitHub\\CryptoCanuck\\Pages\\NewsLetter.cshtml.cs";
+            string FilePath = "../Newsletter.cshtml";
             StreamReader str = new StreamReader(FilePath);
             string MailNews = str.ReadToEnd();
             str.Close();
@@ -110,6 +113,7 @@ namespace CryptoCanuck.Pages
 
                 // Send the email we created
                 _smtp.Send(mailMessage);
+
             }
 
         } // SendEmail

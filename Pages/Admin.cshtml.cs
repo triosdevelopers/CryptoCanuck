@@ -11,8 +11,7 @@ namespace CryptoCanuck.Pages
     public class AdminModel : PageModel
     {
         public List<string> emails = new List<string>();
-        MailMessage mailMessage = new MailMessage();
-        SmtpClient _smtp = new SmtpClient();
+
         string teamsEmail;
         string teamsEmailPassword;
         string teamsEmailHost;
@@ -61,6 +60,9 @@ namespace CryptoCanuck.Pages
 
         public void SendEmail(object sender, EventArgs e){
             //get the Settings from WEB.CONFIG file.
+
+            MailMessage mailMessage = new MailMessage();
+            SmtpClient _smtp = new SmtpClient();
 
             teamsEmail = ConfigurationManager.AppSettings["emailsender"].ToString();
             teamsEmailPassword = ConfigurationManager.AppSettings["password"].ToString();

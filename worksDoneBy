@@ -86,5 +86,6 @@ Works done by Allaura
     -> all StoredProceedures needed saved structure of db and sp in txt file for reference by all
     -> create or update table function to open the database so information is written back to it and stored, this 
         function is saved in the EmailBlast.cs for ease of use
+        (moved what was in EmailBlast to admin to tidy things up)
 -email out of newsletter when there is an update all emails have an unsubscribe function that runs that sp 
 -unsubscribe function set MailerList status to D, emails only sent to those with status A

@@ -76,3 +76,15 @@ Works done by Josh Eugenio
     and calculates the price into USD CAD JPY or EUR
 - created a form that takes in a crypto currency and the amount of that currency to be calculated
 - created a chart that displays the the calculated prices
+
+Works done by Allaura
+-newsletter email subscription function and page
+-admin page for newsletter, would normally have a login that once passed would give access but removed it so everyone 
+    has access to it for testing and review 
+-SQLite db CryptoCanuckNewsletter db
+    -> stores subscriber info (would store admin info if left in) and newsletter message entries
+    -> all StoredProceedures needed saved structure of db and sp in txt file for reference by all
+    -> create or update table function to open the database so information is written back to it and stored, this 
+        function is saved in the EmailBlast.cs for ease of use
+-email out of newsletter when there is an update all emails have an unsubscribe function that runs that sp 
+-unsubscribe function set MailerList status to D, emails only sent to those with status A

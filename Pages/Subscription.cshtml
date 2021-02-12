@@ -1,0 +1,15 @@
+@page
+@model SubscriptionModel
+@{
+    ViewData["Title"] = "Newsletter Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Please subscribe to our newsletter for updates from our team.</h1>
+    <div>
+        <form method="post" asp-page-handler="Subscribe">
+            <input type="email" placeholder="Your email here" style="width: 350px; text-align: center;">
+            <input class="contactStyle" type="submit" name="email" value="Subscribe" title="Subscribe" style="width: 125px;"> 
+        </form>
+    </div>
+</div>

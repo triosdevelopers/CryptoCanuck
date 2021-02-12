@@ -75,10 +75,9 @@
                         </li>
                     </ul>
                     <div>
-                        <form method="post">
+                        <form method="post" asp-page-handler="Subscribe">
                             <input type="email" placeholder="Subscribe to our weekly newsletter" style="width: 275px; text-align: center;">
-                            <button type="submit">Subscribe</button> 
-                        <!-- ask shell team where the want the code for the method to send email to db -->
+                            <input class="contactStyle" type="submit" name="email" value="Subscribe" title="Subscribe" style="width: 125px;"> 
                         </form>
                     </div>
                 </div>

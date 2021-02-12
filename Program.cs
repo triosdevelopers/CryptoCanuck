@@ -15,6 +15,7 @@ namespace CryptoCanuck
         public static Crypto price;
         public static Top24Root topData;
         public static Prices prices;
+        public static DataAccess da = new DataAccess();
         
         public static string dataScript;
         public static void Main(string[] args)

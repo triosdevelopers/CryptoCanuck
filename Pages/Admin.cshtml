@@ -1,0 +1,15 @@
+@page
+@model AdminModel
+@{
+    ViewData["Title"] = "Admin Page";
+}
+
+<div class="text-center" >
+    <h1 class="display-4">Newsletter Message</h1>
+    <div class="ptest" style="text-align: center;">
+        <form asp-asp-page-handler="MessageUpdate">
+            <textarea title="message" style="width: 80%;" name="message">Please enter the message you want your users to see.</textarea>
+            <input class="contactStyle" type="submit" value="Submit" style="width: 125;" title="Submit">
+        </form>
+     </div>
+</div>

@@ -1,0 +1,6 @@
+dotnet add package System.Data.SqlClient --version 4.8.2
+
+----- only if sql connection issues
+----- if still issues use this to update the intall
+
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
